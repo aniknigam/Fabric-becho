@@ -15,7 +15,62 @@
     <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
+<style>
+    .navbar a {
+  float: left;
+  font-size: 16px;
+color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 <body>
 
     <header>
@@ -35,13 +90,18 @@
                     <i class="fas fa-search search"></i>
                     <input type="text" id="input" name="searchBox" placeholder="Buy and Sell Product Easily">
                 </div>
-                <!-- USER SECTION (CART AND USER ICON) -->
-                <!-- <div id="user">
-                    <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart">
-                            <div id="badge"> 0 </div>
-                        </i></a>
-                    <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
-                </div> -->
+                <div class="navbar">
+                    <div class="dropdown">
+                      <button class="dropbtn">Dropdown 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div> 
+                  </div>
             </div>
 
         </section>

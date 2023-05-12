@@ -12,16 +12,51 @@
     <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- slider links -->
-    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jQuery3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <div id="1"></div>
-    <script>
+    <div id="1">
+        <header>
+            <section>
+                <!-- MAIN CONTAINER -->
+                <div id="container">
+                    <!-- SHOP NAME -->
+                    <div id="shopName"><a href="index.html"> <img src="img/fabric-logo.jpg" alt="logo"  class ="header-logo"> </a></div>
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <div id="collection">
+                        <!-- <div id="description" > <p class="header-desc">Buy and Sell Product Easily</p> </div> -->
+                        <div id="clothing"><a href="about.html"> About  </a></div>
+                        <div id="accessories"><a href="accessories.html"> Contact Us </a></div>
+                    </div>
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="Buy and Sell Product Easily">
+                    </div>
+                    <div class="navbar">
+                        <div class="dropdown">
+                          <button class="dropbtn">Dropdown 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </div> 
+                      </div>
+                </div>
+    
+            </section>
+        </header>
+    </div>
+    <!-- <script>
         load("header.html");
         function load(url)
         {
@@ -30,7 +65,9 @@
             req.send(null);
             document.getElementById(1).innerHTML = req.responseText;
         }
-    </script>
+    </script> -->
+
+  
     <!-- SLIDER -->
     <div id="2"></div>
     <script>
