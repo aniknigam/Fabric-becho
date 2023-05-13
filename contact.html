@@ -21,35 +21,17 @@
 
 <body>
 
-    <header>
-        <section>
-            <!-- MAIN CONTAINER -->
-            <div id="container">
-                <!-- SHOP NAME -->
-                <div id="shopName"><a href="index.html"> <img src="img/fabric-logo.jpg" alt="logo" class="header-logo">
-                    </a></div>
-                <!-- COLLCETIONS ON WEBSITE -->
-                <div id="collection">
-                    <!-- <div id="description" > <p class="header-desc">Buy and Sell Product Easily</p> </div> -->
-                    <div id="clothing"><a href="about.html"> About </a></div>
-                    <div id="accessories"><a href="accessories.html"> Contact Us </a></div>
-                </div>
-                <!-- SEARCH SECTION -->
-                <div id="search">
-                    <i class="fas fa-search search"></i>
-                    <input type="text" id="input" name="searchBox" placeholder="Buy and Sell Product Easily">
-                </div>
-                <!-- USER SECTION (CART AND USER ICON) -->
-                <!-- <div id="user">
-                    <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart">
-                            <div id="badge"> 0 </div>
-                        </i></a>
-                    <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
-                </div> -->
-            </div>
-
-        </section>
-    </header>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
     <section class="contact">
         <div class="can1">
             <h2>How can we help you?</h2>
@@ -100,7 +82,7 @@
                 </div>
                 <div class="inputbox">
                     <!-- <input type="button" name="" value="Send"> -->
-                    <button>Send</button>
+                    <button class="senddetial">Send</button>
                  </div>
 
 

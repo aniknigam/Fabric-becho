@@ -205,3 +205,19 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+#sticky-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust the positioning as desired */
+    right: 20px; /* Adjust the positioning as desired */
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure the icon is above other page elements */
+  }
+  
+  #sticky-icon img {
+    width: 60px; /* Adjust the size as desired */
+    height: 60px; /* Adjust the size as desired */
+  }
+  

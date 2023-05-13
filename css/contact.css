@@ -120,7 +120,7 @@ a{
     font-size: 20px;
     transform: translateY(-28px);
 }
- button{
+ .senddetial{
     width: 100px;
     background: white;
     border: none;
@@ -130,7 +130,7 @@ a{
     padding: 10px;
     font-size: 18px;
 }
-button:hover{
+.senddetial:hover{
     width: 100px;
     background: #6c757d;
     border: none;
