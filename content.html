@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> CONTENT | E-COMMERCE WEBSITE BY EDYODA </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- favicon -->
     <link rel="icon"
@@ -16,6 +17,19 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/content.css">
+    <style>
+        .s-icon {
+            font-size: 35px;
+        }
+
+        .card-img-top {
+            width: 260px;          
+            height: 200px;         
+            object-fit: cover;
+        
+        }
+    </style>
+
 
 </head>
 
@@ -62,7 +76,7 @@
                         <div class="card-body  bg-light">
                             <h5 class="card-title"> Silk</h5>
                             <h5 class="card-title">₹1372</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            <p class="card-text">This is a ow as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
                             <a href="" class=" btn btn-outline-secondary buy-btn">Buy</a>
                         </div>
@@ -138,11 +152,17 @@
                     <div class="card">
                         <img src="img/fabric.jpeg" class="card-img-top" alt="...">
                         <div class="card-body  bg-light">
+
                             <h5 class="card-title"> Nilon</h5>
                             <h5 class="card-title">₹1037</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <a href="" class=" btn btn-outline-secondary  buy-btn">Buy</a>
+                                to additional content. This content is a little bit longer.
+
+                            </p>
+                            <div class="row">
+                                <a href="" class=" btn btn-outline-secondary  buy-btn col-6">Buy</a>
+                                <span class="fas fa-check-circle s-icon col-6 assured"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,8 +173,8 @@
     <section>
         <div id="sticky-icon">
             <a href="support.html"><img src="img/support.png" alt="Support Icon"></a>
-          </div>
-          
+        </div>
+
     </section>
     <!-- featured product end -->
 </body>
@@ -162,5 +182,24 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 <script src="content.js"></script>
+<script>
+
+const assuredElements = document.getElementsByClassName('assured');
+
+Array.from(assuredElements).forEach(element => {
+  element.addEventListener('mouseover', () => {
+    const popupMessage = 'This is a pop-up message.';
+    const popupTimeout = 2000; // 2 seconds
+
+    // Show the pop-up message
+    alert(popupMessage);
+
+    // Hide the pop-up message after the specified timeout
+    setTimeout(() => {
+      alert.close();
+    }, popupTimeout);
+  });
+});
+</script>
 
 </html>
